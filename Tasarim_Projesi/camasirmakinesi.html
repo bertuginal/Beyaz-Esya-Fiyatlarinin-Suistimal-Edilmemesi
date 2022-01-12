@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>FYB - Çamaşır Makinesi Ürün Ekle</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="urun_ekle.css" type="" rel="stylesheet" />
+    <link href="anasayfa.css" type="" rel="stylesheet" />
+    <link href="navbar.css" type="" rel="stylesheet" />
+    <link href="dropdown.css" type="" rel="stylesheet" />
+    <title>Document</title>
+    
+    
+</head>
+    
+    
+<body>
+    
+       <div class="topnav" id="myTopnav">
+  <a href="anasayfa.html" class="active">Anasayfa</a>
+  <a onclick="myFunction()" class="dropbtn">Ürünler</a>
+        <div id="myDropdown" class="dropdown-content">
+    <a href="#buzdolabi">Buzdolabı</a>
+    <a href="#camasirmakinesi">Çamaşır Makinesi</a>
+  </div> 
+  <a href="#servisler">Servisler</a>
+  <a href="#hakkında">Hakkında</a>
+  <a href="#iletisim">İletişim</a>
+</div>
+    
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+        <div class="login-box">
+        <br>
+        <br>
+        <br>
+          <h2>ÇAMAŞIR MAKİNESİ ÜRÜN ÖZELLİKLERİ</h2>
+          <form>
+            <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Marka</label>
+              </div>
+            <div class="user-box">
+              <input type="file" name="" required="">
+            </div>
+            <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Enerji Sınıfı</label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Sıkma Devri</label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Yıllık Su Tüketimi</label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Genişlik</label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Yükseklik</label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Derinlik</label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Yıkama Kapasitesi</label>
+            </div>
+              <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Renk</label>
+            </div>
+              <div class="user-box">
+              <input type="text" name="" required="">
+              <label>Hızlı Yıkama</label>
+            </div>
+              
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              ÜRÜN EKLE
+            </a>
+          </form>
+        </div>
+    <script>
+    
+    //------------Dropdown list------------//
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+</body>
+</html>

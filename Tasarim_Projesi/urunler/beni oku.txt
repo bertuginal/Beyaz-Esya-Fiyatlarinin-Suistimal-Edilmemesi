@@ -1,0 +1,1 @@
+urunler isimli db oluştur içerisine sql i import et
