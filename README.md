@@ -5,7 +5,7 @@
 * The benefits of this site;
   * There will be more efficient shopping between the buyer and the seller.
   * The country's economy becomes more organized and efficient.
-  * Fraud or fraud is reduced.
+  * Fraud is reduced.
 
 ## Installation
 Download from this link.
